@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0b2545, #1e3c72, #2a5298);
+    color: #ffffff;
+  }
+  
+
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #000;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    color: #133b5c;
+    text-transform: uppercase;
+  }
+
+  header .titulo {
+    font-size: 1.5rem;
+    color: #0b8457;
+    margin-bottom: 10px;
+  }
+
+  header p, header a {
+    font-size: 1rem;
+    color: #444;
+    text-decoration: none;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #133b5c;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .icons {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .icons i {
+    font-size: 1.8rem;
+    margin: 0 10px;
+    color: #133b5c;
+  }
+
+  @media (max-width: 600px) {
+    .project-card {
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay h3 {
+      font-size: 1.2rem;
+    }
+
+    .overlay p {
+      font-size: 0.9rem;
+    }
+  }
