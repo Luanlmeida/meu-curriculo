@@ -9,6 +9,7 @@ https://luanlmeida.github.io/meu-curriculo/
 🚀 Tecnologias Utilizadas
 
 HTML para a estruturação das seções do currículo.
+
 CSS para o layout e estilização visual.
 
 👨‍💻 Autor
